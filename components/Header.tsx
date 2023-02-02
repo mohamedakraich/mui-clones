@@ -3,6 +3,8 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 // components
 import Logo from './Logo';
+import LocationSearch from './LocationSearch';
+
 import {
   flexBetweenCenter,
   dFlex,
@@ -28,6 +30,9 @@ const Header = () => {
         >
           <Box sx={displayOnDesktop}>
             <Logo />
+          </Box>
+          <Box sx={displayOnDesktop}>
+            <LocationSearch />
           </Box>
         </Box>
       </Container>
