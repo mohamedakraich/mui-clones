@@ -9,17 +9,18 @@
 
 ### Yarn install
 
-- `corepack enable` (sudo npm install -g corepack)
+- `corepack enable` (`sudo npm install -g corepack`)
 - `corepack prepare yarn@stable --activate`
 - `yarn --version`
 - `yarn set version stable`
 
 ### Repo Setup
 
-- yarn create next-app --typescript reactjs_playground
-- yarn add @mui/material @emotion/react @emotion/styled
-- yarn add @fontsource/roboto
-- yarn add @mui/icons-material
+- `yarn create next-app --typescript reactjs_playground`
+- `yarn add @mui/material @emotion/react @emotion/styled`
+- `yarn add @fontsource/roboto`
+- `yarn add @mui/icons-material`
+- `yarn add react-swipeable-views`
 
 ## Editor Setup VSCode
 
