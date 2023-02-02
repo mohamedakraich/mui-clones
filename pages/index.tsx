@@ -5,6 +5,8 @@ import { Box, Container, CssBaseline } from '@mui/material'
 
 import OptionsTab from '@/components/OptionsTab';
 import LocationCards from '@/components/LocationCards';
+import Footer from '@/components/Footer';
+import { displayOnDesktop } from '@/themes/commonStyles';
 
 export default function Home() {
   return (
@@ -33,6 +35,9 @@ export default function Home() {
           <Container maxWidth="xl" sx={{ mb: 3 }}>
             <LocationCards />
           </Container>
+        </Box>
+        <Box sx={displayOnDesktop}>
+          <Footer />
         </Box>
       </Box>
     </React.Fragment>

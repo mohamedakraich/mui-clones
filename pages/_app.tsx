@@ -1,3 +1,4 @@
+import "styles/App.css"
 import "styles/CarouselCard.css"
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
