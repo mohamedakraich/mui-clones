@@ -7,6 +7,7 @@ import OptionsTab from '@/components/OptionsTab';
 import LocationCards from '@/components/LocationCards';
 import Footer from '@/components/Footer';
 import FooterMenu from '@/components/FooterMenu';
+import MobileFooter from '@/components/MobileFooter';
 
 import { displayOnDesktop } from '@/themes/commonStyles';
 
@@ -36,6 +37,13 @@ export default function Home() {
         >
           <Container maxWidth="xl" sx={{ mb: 3 }}>
             <LocationCards />
+            <Box
+              sx={{
+                display: { xs: 'flex', md: 'none' },
+              }}
+            >
+              <MobileFooter />
+            </Box>
           </Container>
         </Box>
         <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
