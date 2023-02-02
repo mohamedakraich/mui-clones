@@ -5,6 +5,7 @@ import Container from '@mui/material/Container';
 import Logo from './Logo';
 import LocationSearch from './LocationSearch';
 import ProfileSettings from './ProfileSettings';
+import MobileSearch from './MobileSearch';
 
 import {
   flexBetweenCenter,
@@ -37,6 +38,9 @@ const Header = () => {
           </Box>
           <Box sx={displayOnDesktop}>
             <ProfileSettings />
+          </Box>
+          <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
+            <MobileSearch />
           </Box>
         </Box>
       </Container>
