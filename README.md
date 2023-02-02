@@ -2,17 +2,17 @@
 
 #### Install Node.js via binary archive on Linux?
 
-- curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-- wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-- source ~/.profile
-- nvm install --lts
+- `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash`
+- `wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash`
+- `source ~/.profile`
+- `nvm install --lts`
 
 ### Yarn install
 
-- corepack enable (sudo npm install -g corepack)
-- corepack prepare yarn@stable --activate
-- yarn --version
-- yarn set version stable
+- `corepack enable` (sudo npm install -g corepack)
+- `corepack prepare yarn@stable --activate`
+- `yarn --version`
+- `yarn set version stable`
 
 ### Repo Setup
 
