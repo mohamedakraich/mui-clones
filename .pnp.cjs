@@ -37,6 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:18.11.18"],\
             ["@types/react", "npm:18.0.27"],\
             ["@types/react-dom", "npm:18.0.10"],\
+            ["@types/react-swipeable-views", "npm:0.13.1"],\
             ["eslint", "npm:8.33.0"],\
             ["eslint-config-next", "virtual:8168d38487d3a1f0f69aa7ea102aef162c20e7636aacad1a1bd137c8ceeed27606aceff47abc100dd21413399f8a9f328557c48fefe674807da240698f2d124e#npm:13.1.6"],\
             ["next", "virtual:8168d38487d3a1f0f69aa7ea102aef162c20e7636aacad1a1bd137c8ceeed27606aceff47abc100dd21413399f8a9f328557c48fefe674807da240698f2d124e#npm:13.1.6"],\
@@ -978,6 +979,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-react-is-npm-17.0.3-1deb53884e-6abb7c47d5.zip/node_modules/@types/react-is/",\
           "packageDependencies": [\
             ["@types/react-is", "npm:17.0.3"],\
+            ["@types/react", "npm:18.0.27"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/react-swipeable-views", [\
+        ["npm:0.13.1", {\
+          "packageLocation": "./.yarn/cache/@types-react-swipeable-views-npm-0.13.1-f1cff0f73b-47908514a5.zip/node_modules/@types/react-swipeable-views/",\
+          "packageDependencies": [\
+            ["@types/react-swipeable-views", "npm:0.13.1"],\
             ["@types/react", "npm:18.0.27"]\
           ],\
           "linkType": "HARD"\
@@ -3703,6 +3714,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:18.11.18"],\
             ["@types/react", "npm:18.0.27"],\
             ["@types/react-dom", "npm:18.0.10"],\
+            ["@types/react-swipeable-views", "npm:0.13.1"],\
             ["eslint", "npm:8.33.0"],\
             ["eslint-config-next", "virtual:8168d38487d3a1f0f69aa7ea102aef162c20e7636aacad1a1bd137c8ceeed27606aceff47abc100dd21413399f8a9f328557c48fefe674807da240698f2d124e#npm:13.1.6"],\
             ["next", "virtual:8168d38487d3a1f0f69aa7ea102aef162c20e7636aacad1a1bd137c8ceeed27606aceff47abc100dd21413399f8a9f328557c48fefe674807da240698f2d124e#npm:13.1.6"],\

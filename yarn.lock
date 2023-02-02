@@ -695,6 +695,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-swipeable-views@npm:^0.13.1":
+  version: 0.13.1
+  resolution: "@types/react-swipeable-views@npm:0.13.1"
+  dependencies:
+    "@types/react": "*"
+  checksum: 47908514a541d40c454b09c3eb47e6bbe55742c37e88181b412052297941191d08b1fc0ec176b6c886bb3f22a8d66aff9bdeb2c26496c6335a7579e9aea02302
+  languageName: node
+  linkType: hard
+
 "@types/react-transition-group@npm:^4.4.5":
   version: 4.4.5
   resolution: "@types/react-transition-group@npm:4.4.5"
@@ -2939,6 +2948,7 @@ __metadata:
     "@types/node": 18.11.18
     "@types/react": 18.0.27
     "@types/react-dom": 18.0.10
+    "@types/react-swipeable-views": ^0.13.1
     eslint: 8.33.0
     eslint-config-next: 13.1.6
     next: 13.1.6

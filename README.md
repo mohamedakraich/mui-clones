@@ -21,6 +21,7 @@
 - `yarn add @fontsource/roboto`
 - `yarn add @mui/icons-material`
 - `yarn add react-swipeable-views`
+- `yarn add @types/react-swipeable-views`
 
 ## Editor Setup VSCode
 
