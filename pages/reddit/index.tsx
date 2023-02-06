@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Box, CssBaseline } from '@mui/material'
 
-import { appWrapper, contentWrapper, createAccountWrapper, joinRedditWrapper, scrollListWrapper, sideBarWrapper } from '@/styles/reddit/syles';
+import { appWrapper, contentWrapper, createAccountWrapper, joinRedditWrapper, scrollListWrapper, sideBarWrapper } from '@/styles/reddit/styles';
 
 import AppThemeProvider from '@/themes/reddit/AppThemeProvider';
 
