@@ -5,7 +5,7 @@ interface CustomButtonProps {
     text: string,
     bgColor: string,
     color: string,
-    space: boolean,
+    space?: boolean,
     [x:string]: any;
 }
 
