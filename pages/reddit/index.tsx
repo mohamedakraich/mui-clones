@@ -6,6 +6,7 @@ import { appWrapper, contentWrapper, createAccountWrapper, joinRedditWrapper, sc
 
 import AppThemeProvider from '@/themes/reddit/AppThemeProvider';
 import Navbar from '@/components/reddit/navigation/NavBar';
+import SideList from '@/components/reddit/SideList';
 
 export default function Home() {
     return (
@@ -16,6 +17,7 @@ export default function Home() {
                 <Box sx={contentWrapper}>
                     <Box sx={sideBarWrapper}>
                         <Box sx={scrollListWrapper}>
+                            <SideList />
                         </Box>
                         <Box sx={createAccountWrapper}>
                             <Box sx={joinRedditWrapper}>

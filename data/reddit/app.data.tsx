@@ -66,7 +66,17 @@ export const celebrityList = [
   { id: 3, text: 'gamestop' },
 ];
 
-export const sideListItems = [
+interface SideListItemsType {
+  id: number;
+  subdivision?: boolean | undefined;
+  divider?: boolean | undefined;
+  text: string;
+  icon?: JSX.Element | undefined;
+  nested?: boolean | undefined;
+  data?: any;
+}
+
+export const sideListItems: SideListItemsType[] = [
   { id: 1, subdivision: true, text: 'Feeds' },
   { id: 2, text: 'Home', icon: <AiOutlineHome size={24} /> },
   { id: 3, text: 'Popular', icon: <BsBoxArrowInUpRight size={24} /> },
