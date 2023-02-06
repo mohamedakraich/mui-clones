@@ -17,6 +17,7 @@ import {
 import Logo from './Logo';
 import SearchBar from './SearchBar';
 import CustomButton from '../shared/CustomButton';
+import UserProfile from './UserProfile';
 
 
 const Navbar = () => {
@@ -47,6 +48,7 @@ const Navbar = () => {
                                 space
                             />
                         </Box>
+                        <UserProfile />
                     </Box>
                 </Box>
             </Toolbar>
