@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { CssBaseline } from '@mui/material'
+import { Box, CssBaseline } from '@mui/material'
+
+import { appWrapper, contentWrapper, createAccountWrapper, joinRedditWrapper, scrollListWrapper, sideBarWrapper } from '@/styles/reddit/syles';
 
 import AppThemeProvider from '@/themes/reddit/AppThemeProvider';
 
@@ -8,7 +10,18 @@ export default function Home() {
     return (
         <AppThemeProvider>
             <CssBaseline />
-            <h1>Hello From Reddit Index Page</h1>
+            <Box sx={appWrapper}>
+                <Box sx={contentWrapper}>
+                    <Box sx={sideBarWrapper}>
+                        <Box sx={scrollListWrapper}>
+                        </Box>
+                        <Box sx={createAccountWrapper}>
+                            <Box sx={joinRedditWrapper}>
+                            </Box>
+                        </Box>
+                    </Box>
+                </Box>
+            </Box>
         </AppThemeProvider>
     )
 }
