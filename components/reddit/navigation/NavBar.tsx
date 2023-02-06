@@ -15,6 +15,7 @@ import {
 } from '@/styles/reddit/styles';
 
 import Logo from './Logo';
+import SearchBar from './SearchBar';
 
 
 const Navbar = () => {
@@ -28,6 +29,7 @@ const Navbar = () => {
                         </Box>
                     </Box>
                     <Box>
+                        <SearchBar/>
                     </Box>
                     <Box sx={flex}>
                         <Box sx={loginBtnWrapper}>
