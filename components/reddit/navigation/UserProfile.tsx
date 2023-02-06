@@ -9,6 +9,7 @@ import useToggle from '@/hooks/reddit/useToggle';
 import { userProfileItems } from '@/data/reddit/app.data';
 import { Divider, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
 import { ColorModeContext } from '@/context/reddit/ThemeContext';
+import NestedList from '../shared/NestedList';
 
 const UserProfile = () => {
     const { el, open, handleClick, handleClose } = useToggle();
@@ -37,7 +38,11 @@ const UserProfile = () => {
                                 {item.divider ? (
                                     <Divider />
                                 ) : item.nested ? (
-                                    <p>Nested List goes here</p>
+                                    <NestedList
+                                        data={item.data}
+                                        icon={item.icon}
+                                        text={item.text}
+                                    />
                                 ) : (
                                     <ListItem disablePadding>
                                         {item.isDarkMode ? (
