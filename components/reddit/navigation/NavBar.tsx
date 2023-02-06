@@ -1,6 +1,7 @@
+import React from 'react';
+
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
-import React from 'react';
 import Toolbar from '@mui/material/Toolbar';
 
 import {
@@ -13,6 +14,8 @@ import {
     logoWrapper,
 } from '@/styles/reddit/styles';
 
+import Logo from './Logo';
+
 
 const Navbar = () => {
     return (
@@ -20,6 +23,7 @@ const Navbar = () => {
             <Toolbar sx={appToolBarWrapper}>
                 <Box sx={toolbarWrapper}>
                     <Box sx={logoWrapper}>
+                        <Logo />
                         <Box sx={mobileNavWrapper}>
                         </Box>
                     </Box>
