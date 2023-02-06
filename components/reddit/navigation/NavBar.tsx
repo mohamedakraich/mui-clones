@@ -16,6 +16,7 @@ import {
 
 import Logo from './Logo';
 import SearchBar from './SearchBar';
+import CustomButton from '../shared/CustomButton';
 
 
 const Navbar = () => {
@@ -29,15 +30,27 @@ const Navbar = () => {
                         </Box>
                     </Box>
                     <Box>
-                        <SearchBar/>
+                        <SearchBar />
                     </Box>
                     <Box sx={flex}>
                         <Box sx={loginBtnWrapper}>
+                            <CustomButton
+                                text="Get App"
+                                bgColor="background.customBtn"
+                                color="text.btnText"
+                                space
+                            />
+                            <CustomButton
+                                text="Login"
+                                bgColor="background.customBtn2"
+                                color="text.btnText"
+                                space
+                            />
                         </Box>
                     </Box>
                 </Box>
             </Toolbar>
-        </AppBar>
+        </AppBar >
     );
 };
 
