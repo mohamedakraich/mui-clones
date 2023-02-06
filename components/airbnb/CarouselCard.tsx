@@ -20,7 +20,7 @@ import {
     fixedIcon,
     carouselImage,
     fixedBottom,
-} from 'themes/commonStyles';
+} from 'themes/airbnb/commonStyles';
 
 type CarouselCardType = {
     id: number;

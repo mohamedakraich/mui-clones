@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 // react icons
 import { FaAirbnb } from 'react-icons/fa';
-import { flexCenter } from 'themes/commonStyles';
+import { flexCenter } from 'themes/airbnb/commonStyles';
 import { pink } from '@mui/material/colors';
 
 const Logo = () => {

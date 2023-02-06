@@ -11,7 +11,7 @@ import {
   flexBetweenCenter,
   dFlex,
   displayOnDesktop,
-} from 'themes/commonStyles';
+} from 'themes/airbnb/commonStyles';
 
 const Header = () => {
   return (

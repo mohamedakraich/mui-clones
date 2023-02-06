@@ -1,7 +1,7 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import { locations as cardLocations } from 'data/mock-data';
+import { locations as cardLocations } from 'data/airbnb/mock-data';
 import CarouselCard from './CarouselCard';
 
 const LocationCards = () => {

@@ -1,19 +1,20 @@
 import React from 'react';
 
-import Header from '@/components/Header'
+import Header from '@/components/airbnb/Header'
 import { Box, Container, CssBaseline } from '@mui/material'
 
-import OptionsTab from '@/components/OptionsTab';
-import LocationCards from '@/components/LocationCards';
-import Footer from '@/components/Footer';
-import FooterMenu from '@/components/FooterMenu';
-import MobileFooter from '@/components/MobileFooter';
+import OptionsTab from '@/components/airbnb/OptionsTab';
+import LocationCards from '@/components/airbnb/LocationCards';
+import Footer from '@/components/airbnb/Footer';
+import FooterMenu from '@/components/airbnb/FooterMenu';
+import MobileFooter from '@/components/airbnb/MobileFooter';
 
-import { displayOnDesktop } from '@/themes/commonStyles';
+import { displayOnDesktop } from '@/themes/airbnb/commonStyles';
+import AppThemeProvider from '@/themes/airbnb/AppThemeProvider';
 
 export default function Home() {
   return (
-    <React.Fragment>
+    <AppThemeProvider>
       <CssBaseline />
       <Box
         sx={{
@@ -53,6 +54,6 @@ export default function Home() {
           <Footer />
         </Box>
       </Box>
-    </React.Fragment>
+    </AppThemeProvider>
   )
 }

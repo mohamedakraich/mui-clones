@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 // react icons
 import { FaFilter } from 'react-icons/fa';
-import { locationsTab } from 'data/mock-data';
+import { locationsTab } from 'data/airbnb/mock-data';
 
 const OptionsTab = () => {
   const [value, setValue] = React.useState(0);

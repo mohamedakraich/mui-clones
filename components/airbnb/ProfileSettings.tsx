@@ -7,7 +7,7 @@ import Stack from '@mui/material/Stack';
 import { BsGlobe } from 'react-icons/bs';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { FaRegUserCircle } from 'react-icons/fa';
-import { flexCenter } from 'themes/commonStyles';
+import { flexCenter } from 'themes/airbnb/commonStyles';
 
 const ProfileSettings = () => {
   return (

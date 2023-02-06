@@ -13,7 +13,7 @@ import {
     flexBetweenCenter,
     justifyCenter,
     fullWidthFlex,
-} from 'themes/commonStyles';
+} from 'themes/airbnb/commonStyles';
 
 const footerLinks = [
     { id: 1, text: 'Privacy', url: '#' },

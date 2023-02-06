@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 
 import { BsGlobe } from 'react-icons/bs';
 
-import { justifyCenter } from 'themes/commonStyles';
+import { justifyCenter } from 'themes/airbnb/commonStyles';
 
 const footerLinks = [
   { id: 1, text: 'Privacy', url: '#' },
