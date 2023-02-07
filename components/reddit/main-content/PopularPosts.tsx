@@ -12,6 +12,8 @@ import { cardContentItems } from '@/data/reddit/app.data';
 import PostSort from './PostSort';
 import PopularCommunities from './PopularCommunities';
 import Policy from './Policy';
+import InfoCard from './InfoCard';
+
 
 const PopularPosts = () => {
     return (
@@ -25,7 +27,7 @@ const PopularPosts = () => {
                         <PostSort />
                     </Box>
                     {cardContentItems.map((item) => {
-                        return <p key={item.id}>InfoCard</p>;
+                        return <InfoCard key={item.id} item={item} />;
                     })}
                 </Box>
                 <Box sx={communitiesWrapper}>

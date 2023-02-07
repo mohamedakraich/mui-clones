@@ -8,20 +8,7 @@ import {
     postInfoDesc,
     postInfoSubHeader,
 } from '@/styles/reddit/styles';
-
-interface PostInfoContentProps {
-    id: number;
-    likes: string;
-    icon: JSX.Element;
-    user: string;
-    postedBy: string;
-    timeAgo: string;
-    desc: string;
-    image: string;
-    comments: string;
-    youtubeId?: undefined;
-    linkUrl?: undefined;
-}
+import { PostInfoContentProps } from '@/data/reddit/app.data';
 
 const PostInfoContent = ({ item }: { item: PostInfoContentProps }) => {
     return (

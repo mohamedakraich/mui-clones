@@ -3,7 +3,7 @@ import { Box, Button, Typography } from '@mui/material';
 import { cardFooterWrapper, cardFooterText } from '@/styles/reddit/styles';
 import { cardFooterItems } from '@/data/reddit/app.data';
 
-const CardFooter = ({ comments = 0 }) => {
+const CardFooter = ({ comments = "0" }) => {
     return (
         <Box sx={cardFooterWrapper}>
             {cardFooterItems.map((item) => {

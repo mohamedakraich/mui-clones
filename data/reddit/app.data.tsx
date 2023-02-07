@@ -185,7 +185,21 @@ export const imageCardsItems = [
   },
 ];
 
-export const cardContentItems = [
+export interface PostInfoContentProps {
+  id: number;
+  likes: string;
+  icon: JSX.Element;
+  user: string;
+  postedBy: string;
+  timeAgo: string;
+  desc: string;
+  image?: string;
+  comments: string;
+  youtubeId?: string;
+  linkUrl?: string;
+}
+
+export const cardContentItems: PostInfoContentProps[] = [
   {
     id: 1,
     likes: '24.4k',
