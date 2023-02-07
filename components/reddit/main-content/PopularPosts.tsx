@@ -10,6 +10,7 @@ import {
 } from '@/styles/reddit/styles';
 import { cardContentItems } from '@/data/reddit/app.data';
 import PostSort from './PostSort';
+import PopularCommunities from './PopularCommunities';
 
 const PopularPosts = () => {
     return (
@@ -27,7 +28,7 @@ const PopularPosts = () => {
                     })}
                 </Box>
                 <Box sx={communitiesWrapper}>
-                    {/* <PopularCommunities /> */}
+                    <PopularCommunities />
                     {/* <Policy /> */}
                 </Box>
             </Box>
