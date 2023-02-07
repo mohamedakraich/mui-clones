@@ -11,6 +11,7 @@ import {
 import { cardContentItems } from '@/data/reddit/app.data';
 import PostSort from './PostSort';
 import PopularCommunities from './PopularCommunities';
+import Policy from './Policy';
 
 const PopularPosts = () => {
     return (
@@ -29,7 +30,7 @@ const PopularPosts = () => {
                 </Box>
                 <Box sx={communitiesWrapper}>
                     <PopularCommunities />
-                    {/* <Policy /> */}
+                    <Policy />
                 </Box>
             </Box>
         </React.Fragment>
