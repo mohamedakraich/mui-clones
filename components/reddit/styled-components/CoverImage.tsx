@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 
 interface CoverImageProps {
     imageUrl?: string;
-    imageHeight?: number;
+    imageHeight?: string;
 }
 
 export const CoverImage = styled.div`
