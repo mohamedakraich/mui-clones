@@ -1,0 +1,20 @@
+import React from 'react';
+import Link from '@mui/material/Link';
+import { Box, Button } from '@mui/material';
+import { AiOutlineLink } from 'react-icons/ai';
+import { linkContentWrapper, linkContentBtn } from '@/styles/reddit/styles';
+
+const LinkContent = ({ text }: { text: string }) => {
+    return (
+        <Box sx={linkContentWrapper}>
+            <Link href={text}> {text}</Link>
+            <Box>
+                <Button sx={linkContentBtn}>
+                    <AiOutlineLink />
+                </Button>
+            </Box>
+        </Box>
+    );
+};
+
+export default LinkContent;
