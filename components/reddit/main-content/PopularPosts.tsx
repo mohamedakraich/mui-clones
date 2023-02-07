@@ -9,6 +9,7 @@ import {
     postSortContainer,
 } from '@/styles/reddit/styles';
 import { cardContentItems } from '@/data/reddit/app.data';
+import PostSort from './PostSort';
 
 const PopularPosts = () => {
     return (
@@ -19,7 +20,7 @@ const PopularPosts = () => {
             <Box sx={postSortContainer}>
                 <Box sx={postSectionWrapper}>
                     <Box sx={postSortWrapper}>
-                        {/* <PostSort /> */}
+                        <PostSort />
                     </Box>
                     {cardContentItems.map((item) => {
                         return <p key={item.id}>InfoCard</p>;
