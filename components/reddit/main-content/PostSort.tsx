@@ -14,6 +14,7 @@ import {
 } from '@/styles/reddit/styles';
 import SelectMore from './SelectMore';
 import SwitchLayout from './SwitchLayout';
+import CountrySelect from './CountrySelect';
 
 const PostSort = () => {
     return (
@@ -23,7 +24,7 @@ const PostSort = () => {
                     <Button sx={postSortBtn1} variant="outlined" startIcon={<SiHotjar />}>
                         Hot
                     </Button>
-                    {/* <CountrySelect />*/}
+                    <CountrySelect />
                     <Button
                         sx={postSortBtn2}
                         variant="outlined"
