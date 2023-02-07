@@ -3,12 +3,13 @@ import React from 'react';
 import { Box, CssBaseline, Typography } from '@mui/material'
 import { blue, grey } from '@mui/material/colors';
 
-import { appWrapper, contentWrapper, createAccountWrapper, joinRedditWrapper, scrollListWrapper, sideBarWrapper } from '@/styles/reddit/styles';
+import { appWrapper, contentAreaWrapper, contentWrapper, createAccountWrapper, joinRedditWrapper, scrollListWrapper, sideBarWrapper } from '@/styles/reddit/styles';
 
 import AppThemeProvider from '@/themes/reddit/AppThemeProvider';
 import Navbar from '@/components/reddit/navigation/NavBar';
 import SideList from '@/components/reddit/SideList';
 import CustomButton from '@/components/reddit/shared/CustomButton';
+import AppContentArea from '@/components/reddit/AppContentArea';
 
 export default function Home() {
     return (
@@ -35,6 +36,9 @@ export default function Home() {
                                 />
                             </Box>
                         </Box>
+                    </Box>
+                    <Box sx={contentAreaWrapper}>
+                        <AppContentArea />
                     </Box>
                 </Box>
             </Box>
