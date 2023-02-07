@@ -9,28 +9,28 @@ import { switchLayoutBtn } from '@/styles/reddit/styles';
 import useToggle from '@/hooks/reddit/useToggle';
 
 const SelectMore = () => {
-  const { el, open, handleClick, handleClose } = useToggle();
+    const { el, open, handleClick, handleClose } = useToggle();
 
-  return (
-    <div>
-      <Button id="country-select" sx={switchLayoutBtn} onClick={handleClick}>
-        <BsThreeDots size={18} />
-      </Button>
-      <Menu
-        id="country-select-menu"
-        anchorEl={el}
-        open={open}
-        onClose={handleClose}
-        MenuListProps={{
-          'aria-labelledby': 'country-select',
-        }}
-      >
-        <MenuItem onClick={handleClose}>Rising</MenuItem>
-        <MenuItem onClick={handleClose}> Most Popular</MenuItem>
-        <MenuItem onClick={handleClose}>Most Watched</MenuItem>
-      </Menu>
-    </div>
-  );
+    return (
+        <div>
+            <Button id="country-select" sx={switchLayoutBtn} onClick={handleClick}>
+                <BsThreeDots size={18} />
+            </Button>
+            <Menu
+                id="country-select-menu"
+                anchorEl={el}
+                open={open}
+                onClose={handleClose}
+                MenuListProps={{
+                    'aria-labelledby': 'country-select',
+                }}
+            >
+                <MenuItem onClick={handleClose}>Rising</MenuItem>
+                <MenuItem onClick={handleClose}> Most Popular</MenuItem>
+                <MenuItem onClick={handleClose}>Most Watched</MenuItem>
+            </Menu>
+        </div>
+    );
 };
 
 export default SelectMore;
