@@ -27,7 +27,7 @@ const PopularPosts = () => {
                         <PostSort />
                     </Box>
                     {cardContentItems.map((item) => {
-                        return <InfoCard key={item.id} item={item} />;
+                        return <InfoCard key={item.id} item={item} /> ;
                     })}
                 </Box>
                 <Box sx={communitiesWrapper}>

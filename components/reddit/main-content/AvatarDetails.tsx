@@ -13,7 +13,7 @@ const AvatarDetails = ({ icon, user }: AvatarDetailsProps) => {
     return (
         <React.Fragment>
             <Box sx={avatarWrapper}>
-                <Box sx={{ mr: 1, ...flex }}>
+                <Box component="span" sx={{ mr: 1, ...flex }}>
                     {icon}
                 </Box>
                 <Typography variant="caption"> {user}</Typography>
@@ -24,4 +24,3 @@ const AvatarDetails = ({ icon, user }: AvatarDetailsProps) => {
 
 export default AvatarDetails;
 
-{/*   <Box as="span" sx={{ mr: 1, ...flex }}> */ }

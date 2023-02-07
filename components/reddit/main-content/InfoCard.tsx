@@ -25,7 +25,7 @@ const InfoCard = ({ item }: { item: PostInfoContentProps }) => {
                 {item.youtubeId && <VideoContent id={item.youtubeId} />}
                 {item.image && <ImageContent image={item.image} />}
                 {item.linkUrl && <LinkContent text={item.linkUrl} />}
-                <CardFooter comments={item.comments} />
+                {item.comments && <CardFooter comments={item.comments} />}
             </Box>
         </Box>
     );

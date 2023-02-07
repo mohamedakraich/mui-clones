@@ -309,6 +309,6 @@ export const popularCommunityItems = [
 
 export const cardFooterItems = [
   { id: 1, icon: <BsChatRight size={18} />, comments: true, text: 'Comments' },
-  { id: 2, icon: <FaShare />, text: 'Share' },
-  { id: 3, icon: <MdOutlineSaveAlt />, text: 'Save' },
+  { id: 2, icon: <FaShare />, comments: false, text: 'Share' },
+  { id: 3, icon: <MdOutlineSaveAlt />, comments: false, text: 'Save' },
 ];

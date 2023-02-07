@@ -3,7 +3,7 @@ import { Box, Button, Typography } from '@mui/material';
 import { cardFooterWrapper, cardFooterText } from '@/styles/reddit/styles';
 import { cardFooterItems } from '@/data/reddit/app.data';
 
-const CardFooter = ({ comments = "0" }) => {
+const CardFooter = ({ comments }: { comments: string }) => {
     return (
         <Box sx={cardFooterWrapper}>
             {cardFooterItems.map((item) => {
@@ -11,7 +11,7 @@ const CardFooter = ({ comments = "0" }) => {
                     <Button key={item.id}>
                         <Typography sx={cardFooterText}>
                             {item.icon}
-                            <Box sx={{ ml: 1 }}>
+                            <Box component="span" sx={{ ml: 1 }}>
                                 {item.comments && comments} {item.text}
                             </Box>
                         </Typography>
@@ -23,5 +23,3 @@ const CardFooter = ({ comments = "0" }) => {
 };
 
 export default CardFooter;
-
-{/* <Box as="span" sx={{ ml: 1 }}> */ }
