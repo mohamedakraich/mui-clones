@@ -18,6 +18,7 @@ import Logo from './Logo';
 import SearchBar from './SearchBar';
 import CustomButton from '../shared/CustomButton';
 import UserProfile from './UserProfile';
+import MobileNav from './MobileNav';
 
 
 const Navbar = () => {
@@ -28,6 +29,7 @@ const Navbar = () => {
                     <Box sx={logoWrapper}>
                         <Logo />
                         <Box sx={mobileNavWrapper}>
+                            <MobileNav />
                         </Box>
                     </Box>
                     <Box>
