@@ -18,7 +18,11 @@ import UserProfile from "../UserProfile";
 import NotificationsList from "../NotificationsList";
 import Upload from "../Upload";
 
-const AppNavMenu = () => {
+const AppNavMenu = ({
+  handleDrawerToggle,
+}: {
+  handleDrawerToggle: () => void;
+}) => {
   return (
     <AppBar component="nav" sx={appBar}>
       <Toolbar>
@@ -28,7 +32,7 @@ const AppNavMenu = () => {
               color="inherit"
               aria-label="open drawer"
               edge="start"
-              onClick={() => {}}
+              onClick={handleDrawerToggle}
               sx={{ mr: 2 }}
             >
               <MenuIcon />
