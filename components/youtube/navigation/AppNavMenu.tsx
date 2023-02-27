@@ -14,6 +14,7 @@ import {
   toolbarWrapper,
 } from "@/styles/youtube/styles";
 import SearchBar from "./SearchBar";
+import UserProfile from "../UserProfile";
 
 const AppNavMenu = () => {
   return (
@@ -41,7 +42,7 @@ const AppNavMenu = () => {
           <Box sx={hideOnMobile}>
             {/*  <Upload /> */}
             {/* <NotificationsList /> */}
-            {/*  <UserProfile /> */}
+            <UserProfile />
           </Box>
         </Box>
       </Toolbar>
