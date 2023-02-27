@@ -3,6 +3,7 @@ import React, { useState, useEffect, useContext } from "react";
 import SideList from "./SideList";
 import { appContentWrapper, flexColumnGrow } from "@/styles/youtube/styles";
 import TabList from "./TabList";
+import { Toolbar } from "@mui/material";
 
 const AppContentArea = ({ isOpen }: { isOpen: boolean }) => {
   const [youtubeData, setYoutubeData] = useState([]);
@@ -28,7 +29,7 @@ const AppContentArea = ({ isOpen }: { isOpen: boolean }) => {
             width: `calc(100vw - ${sideBarWidth})`,
           }}
         >
-          <TabList/>
+          <TabList />
         </Box>
         <Box
           component="div"
