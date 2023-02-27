@@ -5,12 +5,21 @@ import { appContentWrapper, flexColumnGrow } from "@/styles/youtube/styles";
 import TabList from "./TabList";
 import CardList from "./CardList";
 import { youtubeResponse } from "@/data/youtube/app.data";
+import Shorts from "./Shorts";
 
 const AppContentArea = ({ isOpen }: { isOpen: boolean }) => {
-  const [youtubeData, setYoutubeData] = useState([]);
+  const [hide, setHide] = useState(false);
 
   const items1 = youtubeResponse.slice(0, 8);
   const items2 = youtubeResponse.slice(8);
+
+  const hideShorts = () => {
+    setHide(true);
+  };
+
+  const undoHide = () => {
+    setHide(false);
+  };
 
   const sideBarWidth = isOpen ? "70px" : "250px";
   return (
@@ -58,11 +67,11 @@ const AppContentArea = ({ isOpen }: { isOpen: boolean }) => {
               width: `calc(100vw - ${sideBarWidth})`,
             }}
           >
-            {/*<Shorts
+            <Shorts
               hideShorts={hideShorts}
               isHidden={hide}
               undoHide={undoHide}
-        />*/}
+            />
           </Box>
           <CardList items={items2} />
         </Box>
