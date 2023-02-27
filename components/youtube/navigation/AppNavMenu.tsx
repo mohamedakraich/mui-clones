@@ -13,6 +13,7 @@ import {
   logoText,
   toolbarWrapper,
 } from "@/styles/youtube/styles";
+import SearchBar from "./SearchBar";
 
 const AppNavMenu = () => {
   return (
@@ -34,7 +35,9 @@ const AppNavMenu = () => {
               YouTube
             </Typography>
           </Box>
-          <Box sx={hideOnMobile}>{/* <SearchBar /> */}</Box>
+          <Box sx={hideOnMobile}>
+            <SearchBar />
+          </Box>
           <Box sx={hideOnMobile}>
             {/*  <Upload /> */}
             {/* <NotificationsList /> */}
