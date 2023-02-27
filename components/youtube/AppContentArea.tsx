@@ -1,12 +1,16 @@
 import Box from "@mui/material/Box";
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState } from "react";
 import SideList from "./SideList";
 import { appContentWrapper, flexColumnGrow } from "@/styles/youtube/styles";
 import TabList from "./TabList";
-import { Toolbar } from "@mui/material";
+import CardList from "./CardList";
+import { youtubeResponse } from "@/data/youtube/app.data";
 
 const AppContentArea = ({ isOpen }: { isOpen: boolean }) => {
   const [youtubeData, setYoutubeData] = useState([]);
+
+  const items1 = youtubeResponse.slice(0, 8);
+  const items2 = youtubeResponse.slice(8);
 
   const sideBarWidth = isOpen ? "70px" : "250px";
   return (
@@ -41,7 +45,7 @@ const AppContentArea = ({ isOpen }: { isOpen: boolean }) => {
             width: `calc(100vw - ${sideBarWidth})`,
           }}
         >
-          {/*<CardList items={items1} />*/}
+          <CardList items={items1} />
           <Box
             component="div"
             sx={{
@@ -60,7 +64,7 @@ const AppContentArea = ({ isOpen }: { isOpen: boolean }) => {
               undoHide={undoHide}
         />*/}
           </Box>
-          {/* <CardList items={items2} />*/}
+          <CardList items={items2} />
         </Box>
       </Box>
     </Box>

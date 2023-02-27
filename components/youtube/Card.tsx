@@ -17,7 +17,7 @@ export interface AppCardProps {
   url: string;
   title: string;
   channelTitle: string;
-  videoId: string;
+  videoId: string | undefined;
 }
 
 const AppCard = ({ url, title, channelTitle, videoId }: AppCardProps) => {
