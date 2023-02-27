@@ -15,6 +15,7 @@ import {
 } from "@/styles/youtube/styles";
 import SearchBar from "./SearchBar";
 import UserProfile from "../UserProfile";
+import NotificationsList from "../NotificationsList";
 
 const AppNavMenu = () => {
   return (
@@ -41,7 +42,7 @@ const AppNavMenu = () => {
           </Box>
           <Box sx={hideOnMobile}>
             {/*  <Upload /> */}
-            {/* <NotificationsList /> */}
+            <NotificationsList />
             <UserProfile />
           </Box>
         </Box>
